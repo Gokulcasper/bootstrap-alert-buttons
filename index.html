@@ -42,7 +42,7 @@
                 omnis veniam quam at aliquid velit reiciendis, ab atque impedit nemo
                 tempora praesentium vel corporis. 
               </p>
-              <button class="btn btn-outline-primary btn-md  ">Primary</button>
+              <button class="btn btn-outline-primary btn-md">Primary</button>
               <button class="btn btn-outline-success btn-block active" >
                 <span class=" spinner-border spinner-border-sm"></span>
                 Disabled Success
@@ -50,6 +50,50 @@
             </button>
       </div>
       <hr>
+<!-- collapse -->
+<div class="text-center">
+    <button class="btn btn-primary  " data-toggle="collapse" data-target="#demo">Primary Collapse</button>
+          <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, et.
+          </div>
+</div>
+<div id="accordion">
+
+    <div class="card">
+        <div class="card-header">
+            <a href="#collapseone" data-toggle="collapse" class="card-link">Group Item #1</a>
+        </div>
+        <div id="collapseone" data-parent="#accordion" class="collapse show">
+            <div class="card-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a href="#collapsetwo" data-toggle="collapse" class="collapsed card-link">Group Item #2</a>
+        </div>
+        <div id="collapsetwo" data-parent="#accordion" class="collapse ">
+            <div class="card-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a href="#collapsethree" data-toggle="collapse" class="card-link">Group Item #3</a>
+        </div>
+        <div id="collapsethree" data-parent="#accordion" class="collapse ">
+            <div class="card-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+<hr>
+
 <!-- Progress -->
       <div class="progress">
         <div class="progress-bar progress-bar-striped progress-bar-animated"style="width:40%">Free Space 40%</div>
@@ -109,6 +153,8 @@
         </li>
       </ul>
       
+<hr>
+
     </div>
   </body>
 </html>
