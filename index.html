@@ -290,20 +290,19 @@
           </label>
         </div>
 
-
         <!-- Custom Forms -->
 
-         <!-- Range -->
-       <div class="py-2">
-        <label for="defaultRange">Password Strength</label>
-        <input type="range"  id="defaultRange" name="strength">
-       </div>
-       <!-- Toggle switch -->
+        <!-- Range -->
+        <div class="py-2">
+          <label for="defaultRange">Password Strength</label>
+          <input type="range" id="defaultRange" name="strength" />
+        </div>
+        <!-- Toggle switch -->
         <div class="custom-control custom-switch">
           <input type="checkbox" class="custom-control-input" id="switch" />
           <label class="custom-control-label" for="switch">Toggle Me</label>
         </div>
-       
+
         <!--radio-->
         <div class="d-flex py-2">
           <div class="custom-control custom-radio">
@@ -328,51 +327,63 @@
           </div>
         </div>
         <!--select menu-->
-        <div class=" py-2">
-        <select name="media" class="custom-select">
+        <div class="py-2">
+          <select name="media" class="custom-select">
             <option selected>Select Open With</option>
             <option value="Facebook">Facebook</option>
             <option value="LinkedIn">LinkedIn</option>
             <option value="Google">Google</option>
-        </select>
+          </select>
         </div>
 
-       <div class="py-5 text-center">
-        <button class="btn btn-primary " type="submit">Submit</button>
-       </div>
+        <div class="py-5 text-center">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
       </form>
 
-      <hr/>
+      <hr />
 
       <!-- Carousel -->
       <div class="carousel slide" id="demo" data-ride="carousel">
         <!-- Indicators -->
         <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
         </ul>
         <!-- slideshow -->
         <div class="carousel-inner">
-            <div class="carousel-item active"> 
-                <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="insidepalace"  >
-            </div>
-            <div class="carousel-item "> 
-                <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="hometown">
-            </div>
-            <div class="carousel-item "> 
-                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="birdfly">
-            </div>
-            <div class="carousel-item "> 
-                <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="waterside">
-            </div>
+          <div class="carousel-item active">
+            <img
+              src="https://www.w3schools.com/bootstrap4/la.jpg"
+              alt="insidepalace"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+              alt="hometown"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.w3schools.com/bootstrap4/ny.jpg"
+              alt="birdfly"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+              alt="waterside"
+            />
+          </div>
         </div>
         <a href="#demo" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+          <span class="carousel-control-prev-icon"></span>
         </a>
         <a href="#demo" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
+          <span class="carousel-control-next-icon"></span>
         </a>
       </div>
       <!-- Tooltip -->
@@ -380,24 +391,44 @@
         <h3>Tooltip</h3>
         <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
       </div>
+      <!-- popover -->
       <div class="py-3 text-center">
         <h3>Popover</h3>
-        <a href="#" data-toggle="popover" title="popover" data-content="Some content inside the popover">
-            Toggle popover
+        <a
+          href="#"
+          data-toggle="popover"
+          title="popover"
+          data-content="Some content inside the popover"
+        >
+          Toggle popover
         </a>
       </div>
-      
-
-    </div >
+      <!-- Toast -->
+      <div class="py-5 text-center">
+        <h3>Toast Example</h3>
+        <button type="button" class="btn btn-primary" id="myBtn">
+          Show Toast
+        </button>
+        <div class="toast">
+          <div class="toast-header">Toast Header</div>
+          <div class="toast-body">Some text inside the toast body</div>
+        </div>
+      </div>
+    </div>
     <script>
-        $(document).ready(function(){
+      $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
-        });
-        </script>
-        <script>
-            $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-            });
-        </script>
-</body>
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".toast").toast("show");
+      });
+    </script>
+  </body>
 </html>
