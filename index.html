@@ -10,20 +10,48 @@
       type="BSimage"
       href="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container p50">
+    <div class="container">
       <h1>Welcome To Bootstrap</h1>
       <p>Lets Starts Learning Bootstrap</p>
     </div>
+
+    <!-- Navbar   -->
+
+    <div class="container mx-auto p-0">
+      <nav class="navbar navbar-expand-md bg-dark justify-content-between">
+        <a href="#" class="navbar-brand">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq791xsWDh9jVUpGByai9Cq9ZxLQv4aIhExQ&usqp=CAU" alt="logo" width="45px">
+        </a>
+        <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Active</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+        </div> -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        
+      </nav>
+
+    </div>
+
+    <!--------  ---------->
+
     <div class="container color-1 height-500 px-5">
       <h3 class="text-success">
         Welcome To Bootstrap <small class="text-primary"> Learning MERN </small>
@@ -31,99 +59,143 @@
 
       <hr />
       <div class="jumbotron jumbotron-fluid text-center">
-            <img
-              src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Jimny/6182/1686117643111/front-left-side-47.jpg?impolicy=resize&imwidth=420"
-              alt="img"
-              width="250px"
-              class="mx-auto d-block"
-            />
-            <p class="p-5">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-                omnis veniam quam at aliquid velit reiciendis, ab atque impedit nemo
-                tempora praesentium vel corporis. 
-              </p>
-              <button class="btn btn-outline-primary btn-md">Primary</button>
-              <button class="btn btn-outline-success btn-block active" >
-                <span class=" spinner-border spinner-border-sm"></span>
-                Disabled Success
-                <span class=" spinner-grow spinner-grow-sm"></span>
-            </button>
+        <img
+          src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Jimny/6182/1686117643111/front-left-side-47.jpg?impolicy=resize&imwidth=420"
+          alt="img"
+          width="250px"
+          class="mx-auto d-block"
+        />
+        <p class="p-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+          omnis veniam quam at aliquid velit reiciendis, ab atque impedit nemo
+          tempora praesentium vel corporis.
+        </p>
+        <button class="btn btn-outline-primary btn-md">Primary</button>
+        <button class="btn btn-outline-success btn-block active">
+          <span class="spinner-border spinner-border-sm"></span>
+          Disabled Success
+          <span class="spinner-grow spinner-grow-sm"></span>
+        </button>
       </div>
-      <hr>
-<!-- collapse -->
-<div class="text-center">
-    <button class="btn btn-primary  " data-toggle="collapse" data-target="#demo">Primary Collapse</button>
-          <div id="demo" class="collapse">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, et.
+      <hr />
+
+      <!-- collapse -->
+
+      <div class="text-center">
+        <button
+          class="btn btn-primary"
+          data-toggle="collapse"
+          data-target="#demo"
+        >
+          Primary Collapse
+        </button>
+        <div id="demo" class="collapse">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, et.
+        </div>
+      </div>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapseone" data-toggle="collapse" class="card-link"
+              >Group Item #1</a
+            >
           </div>
-</div>
-<div id="accordion">
-
-    <div class="card">
-        <div class="card-header">
-            <a href="#collapseone" data-toggle="collapse" class="card-link">Group Item #1</a>
-        </div>
-        <div id="collapseone" data-parent="#accordion" class="collapse show">
+          <div id="collapseone" data-parent="#accordion" class="collapse show">
             <div class="card-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              numquam quisquam sunt asperiores cupiditate mollitia distinctio
+              totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi
+              expedita adipisci, cupiditate explicabo nobis.
             </div>
+          </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-header">
-            <a href="#collapsetwo" data-toggle="collapse" class="collapsed card-link">Group Item #2</a>
-        </div>
-        <div id="collapsetwo" data-parent="#accordion" class="collapse ">
+        <div class="card">
+          <div class="card-header">
+            <a
+              href="#collapsetwo"
+              data-toggle="collapse"
+              class="collapsed card-link"
+              >Group Item #2</a
+            >
+          </div>
+          <div id="collapsetwo" data-parent="#accordion" class="collapse">
             <div class="card-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              numquam quisquam sunt asperiores cupiditate mollitia distinctio
+              totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi
+              expedita adipisci, cupiditate explicabo nobis.
             </div>
+          </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-header">
-            <a href="#collapsethree" data-toggle="collapse" class="card-link">Group Item #3</a>
-        </div>
-        <div id="collapsethree" data-parent="#accordion" class="collapse ">
+        <div class="card">
+          <div class="card-header">
+            <a href="#collapsethree" data-toggle="collapse" class="card-link"
+              >Group Item #3</a
+            >
+          </div>
+          <div id="collapsethree" data-parent="#accordion" class="collapse">
             <div class="card-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut numquam quisquam sunt asperiores cupiditate mollitia distinctio totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi expedita adipisci, cupiditate explicabo nobis.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              numquam quisquam sunt asperiores cupiditate mollitia distinctio
+              totam ut nobis? Laboriosam assumenda fuga repellendus nisi animi
+              expedita adipisci, cupiditate explicabo nobis.
             </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+      <hr />
 
-</div>
-<hr>
-
-<!-- Progress -->
+      <!-- Progress -->
       <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated"style="width:40%">Free Space 40%</div>
-        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"style="width:35%">Photos 35%</div>
-        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"style="width:10%">Videos 10%</div>
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 40%"
+        >
+          Free Space 40%
+        </div>
+        <div
+          class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+          style="width: 35%"
+        >
+          Photos 35%
+        </div>
+        <div
+          class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+          style="width: 10%"
+        >
+          Videos 10%
+        </div>
       </div>
-      <hr>
-      <div class="text-center ">
-        <div class="btn-group ">
-            <button class="btn btn-info">Apple</button>
-            <button class="btn btn-warning">Samsung</button>
-            <div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                    Sony
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Tablet</a>
-                        <a href="#" class="dropdown-item">Smartphone</a>
-                    </div>
-                </button>
-            </div>
+      <hr />
+      <div class="text-center">
+        <div class="btn-group">
+          <button class="btn btn-info">Apple</button>
+          <button class="btn btn-warning">Samsung</button>
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Sony
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Tablet</a>
+                <a href="#" class="dropdown-item">Smartphone</a>
+              </div>
+            </button>
           </div>
+        </div>
       </div>
-      <hr>
+      <hr />
       <div class="alert alert-success alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <b>Success! </b>indicates a <a href="#" class="alert-link">successful or positive action.</a> 
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+        <b>Success! </b>indicates a
+        <a href="#" class="alert-link">successful or positive action.</a>
       </div>
 
-      <hr>
-<!-- Pagination -->
+      <hr />
+      <!-- Pagination -->
       <ul class="pagination justify-content-center">
         <li class="page-item"><a href="#" class="page-link">Previous</a></li>
         <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -132,29 +204,64 @@
         <li class="page-item"><a href="#" class="page-link">Next</a></li>
       </ul>
 
-      <hr>
-<!-- List Group & Badges -->
-      <ul class="list-group ">
-        <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
-            Inbox
-            <span class="badge badge-success badge-pill">10</span>
+      <hr />
+      <!-- List Group & Badges -->
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-success d-flex justify-content-between align-items-center"
+        >
+          Inbox
+          <span class="badge badge-success badge-pill">10</span>
         </li>
-        <li class="list-group-item active list-group-item-success d-flex justify-content-between align-items-center">
-            Spam
-            <span class="badge badge-success ">20</span>
+        <li
+          class="list-group-item active list-group-item-success d-flex justify-content-between align-items-center"
+        >
+          Spam
+          <span class="badge badge-success">20</span>
         </li>
-        <li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
-            Send
-            <span class="badge badge-success badge-pill">15</span>
+        <li
+          class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center"
+        >
+          Send
+          <span class="badge badge-success badge-pill">15</span>
         </li>
-        <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
-            Draft
-            <span class="badge badge-success badge-pill">13</span>
+        <li
+          class="list-group-item list-group-item-info d-flex justify-content-between align-items-center"
+        >
+          Draft
+          <span class="badge badge-success badge-pill">13</span>
         </li>
       </ul>
-      
-<hr>
 
+      <hr />
+
+<!-- Forms & Inputs -->
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="UserName">UserName : </label>
+    <input type="name" class="form-control" id="UserName" placeholder="Enter UserName" name="UserName">
+  </div>  
+    <!-- Inputs -->
+  <label for="email">Email : </label>
+<div class="input-group mb-3">
+<input type="text" class="form-control" id="email" placeholder="Enter Email" name="email">
+<div class="input-group-append">
+    <span class="input-group-text">@gmail.com</span>
+</div>
+</div>
+    <!--  -->
+  <div class="form-group">
+    <label for="pwd">Password : </label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div> 
+  <div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember">Remember Me
+    </label>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<hr>
     </div>
   </body>
 </html>
