@@ -341,7 +341,7 @@
         <button class="btn btn-primary " type="submit">Submit</button>
        </div>
       </form>
-      
+
       <hr/>
 
       <!-- Carousel -->
@@ -375,7 +375,29 @@
             <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+      <!-- Tooltip -->
+      <div class="py-3 text-center">
+        <h3>Tooltip</h3>
+        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+      </div>
+      <div class="py-3 text-center">
+        <h3>Popover</h3>
+        <a href="#" data-toggle="popover" title="popover" data-content="Some content inside the popover">
+            Toggle popover
+        </a>
+      </div>
       
-    </div>
-  </body>
+
+    </div >
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+            });
+        </script>
+</body>
 </html>
